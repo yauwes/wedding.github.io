@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aji & Dira - Our Wedding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 36px;
+            height: calc(100% - 36px);
+            width: 2px;
+            background: #D4A76A;
+        }
+        .carousel-item {
+            transition: transform 0.5s ease;
+        }
+        .gold-text {
+            color: #D4A76A;
+        }
+        .gold-bg {
+            background-color: #D4A76A;
+        }
+        .cream-bg {
+            background-color: #F8F4E9;
+        }
+        .border-gold {
+            border-color: #D4A76A;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Hero Section -->
+    <section class="hero min-h-screen flex items-center justify-center text-center text-white relative">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative z-10 px-4">
+            <h1 class="serif text-4xl md:text-6xl font-bold mb-2">Aji & Dira</h1>
+            <div class="w-24 h-1 bg-white mx-auto my-6"></div>
+            <p class="serif text-xl md:text-2xl mb-8">17 Agustus 2025</p>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto italic">"You are invited to the beginning of our forever."</p>
+            <a href="#details" class="mt-12 inline-block border border-white px-8 py-3 rounded hover:bg-white hover:text-black transition duration-300">Wedding Details</a>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 text-center">
+            <a href="#story" class="text-white animate-bounce inline-block">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Love Story Section -->
+    <section id="story" class="py-20 cream-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="serif text-3xl md:text-4xl text-center mb-16 gold-text">Our Love Story</h2>
+            
+            <div class="max-w-3xl mx-auto relative">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item relative pl-16 mb-12">
+                    <div class="absolute left-0 top-0 w-12 h-12 rounded-full gold-bg flex items-center justify-center">
+                        <span class="text-white font-bold">1</span>
+                    </div>
+                    <h3 class="serif text-2xl gold-text mb-2">First Meeting</h3>
+                    <p class="text-gray-600">June 2018</p>
+                    <p class="mt-2">We met at a mutual friend's birthday party. It was love at first sight, though we were both too shy to admit it.</p>
+                </div>
+                
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item relative pl-16 mb-12">
+                    <div class="absolute left-0 top-0 w-12 h-12 rounded-full gold-bg flex items-center justify-center">
+                        <span class="text-white font-bold">2</span>
+                    </div>
+                    <h3 class="serif text-2xl gold-text mb-2">First Date</h3>
+                    <p class="text-gray-600">August 2018</p>
+                    <p class="mt-2">After two months of texting, we finally went on our first date to a small café downtown. We talked for hours without realizing how late it was.</p>
+                </div>
+                
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item relative pl-16 mb-12">
+                    <div class="absolute left-0 top-0 w-12 h-12 rounded-full gold-bg flex items-center justify-center">
+                        <span class="text-white font-bold">3</span>
+                    </div>
+                    <h3 class="serif text-2xl gold-text mb-2">Official Couple</h3>
+                    <p class="text-gray-600">October 2018</p>
+                    <p class="mt-2">We made it official during a weekend getaway to the mountains. The autumn leaves made the perfect backdrop for our new beginning.</p>
+                </div>
+                
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item relative pl-16 mb-12">
+                    <div class="absolute left-0 top-0 w-12 h-12 rounded-full gold-bg flex items-center justify-center">
+                        <span class="text-white font-bold">4</span>
+                    </div>
+                    <h3 class="serif text-2xl gold-text mb-2">Moving In Together</h3>
+                    <p class="text-gray-600">May 2020</p>
+                    <p class="mt-2">After nearly two years of dating, we decided to take the next step and moved in together. Our first home was small but filled with love.</p>
+                </div>
+                
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item relative pl-16">
+                    <div class="absolute left-0 top-0 w-12 h-12 rounded-full gold-bg flex items-center justify-center">
+                        <span class="text-white font-bold">5</span>
+                    </div>
+                    <h3 class="serif text-2xl gold-text mb-2">The Proposal</h3>
+                    <p class="text-gray-600">December 2023</p>
+                    <p class="mt-2">On a snowy evening at the same café where we had our first date, I got down on one knee and asked the most important question of my life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Details -->
+    <section id="details" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="serif text-3xl md:text-4xl text-center mb-16 gold-text">Wedding Details</h2>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="mb-8">
+                        <h3 class="serif text-2xl gold-text mb-4">Date & Time</h3>
+                        <p class="text-lg">17 August 2025</p>
+                        <p class="text-lg">4:00 PM - Midnight</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="serif text-2xl gold-text mb-4">Location</h3>
+                        <p class="text-lg">NIHI Sumba Resort</p>
+                        <p class="text-gray-600">Wanokaka, Sumba Barat Daya, Nusa Tenggara Timur, Indonesia</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="serif text-2xl gold-text mb-4">Dress Code</h3>
+                        <p class="text-lg">Beach Formal</p>
+                        <p class="text-gray-600">Light fabrics, pastel or neutral colors recommended</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="h-full w-full rounded-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.8633204303433!2d119.37364727502816!3d-9.777630790316712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c9daffdedf4df%3A0x2b81189bedf1a30a!2sNIHI%20Sumba!5e0!3m2!1sid!2sid!4v1747465628657!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-20 cream-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="serif text-3xl md:text-4xl text-center mb-16 gold-text">Gallery</h2>
+            
+            <div class="max-w-4xl mx-auto relative overflow-hidden">
+                <div id="carousel" class="flex transition-transform duration-500">
+                    <div class="carousel-item min-w-full px-4">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Couple on beach" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="carousel-item min-w-full px-4">
+                        <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Couple holding hands" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="carousel-item min-w-full px-4">
+                        <img src="/Users/erwinqodariyah/iCloud Drive (Archive) - 1/Documents/Documents/SEMESTER 4/Programmer Web/Buat wedding/aji & dira.png" alt="Couple sunset" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                </div>
+                
+                <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md ml-2">
+                    <i class="fas fa-chevron-left gold-text"></i>
+                </button>
+                <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md mr-2">
+                    <i class="fas fa-chevron-right gold-text"></i>
+                </button>
+                
+                <div class="flex justify-center mt-4">
+                    <span class="dot w-3 h-3 rounded-full mx-1 bg-gray-300 cursor-pointer"></span>
+                    <span class="dot w-3 h-3 rounded-full mx-1 bg-gray-300 cursor-pointer"></span>
+                    <span class="dot w-3 h-3 rounded-full mx-1 bg-gray-300 cursor-pointer"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="serif text-3xl md:text-4xl text-center mb-16 gold-text">RSVP</h2>
+            
+            <div class="max-w-2xl mx-auto">
+                <form id="rsvpForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold" required>
+                    </div>
+                    
+                    <div>
+                        <label for="guests" class="block text-gray-700 mb-2">Number of Guests</label>
+                        <select id="guests" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <p class="block text-gray-700 mb-2">Will you attend?</p>
+                        <div class="flex space-x-4">
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="attending" value="yes" class="text-gold focus:ring-gold" checked>
+                                <span class="ml-2">Yes, with pleasure</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="attending" value="no" class="text-gold focus:ring-gold">
+                                <span class="ml-2">Regretfully decline</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-gray-700 mb-2">Message for the Couple</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full gold-bg text-white py-3 rounded hover:bg-opacity-90 transition duration-300">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown -->
+    <section class="py-16 cream-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="serif text-3xl md:text-4xl mb-8 gold-text">Counting Down to Our Big Day</h2>
+            
+            <div id="countdown" class="flex justify-center space-x-4 md:space-x-8">
+                <div class="text-center">
+                    <div class="text-4xl md:text-6xl font-bold gold-text days">00</div>
+                    <div class="text-gray-600">Days</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-6xl font-bold gold-text hours">00</div>
+                    <div class="text-gray-600">Hours</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-6xl font-bold gold-text minutes">00</div>
+                    <div class="text-gray-600">Minutes</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-6xl font-bold gold-text seconds">00</div>
+                    <div class="text-gray-600">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wishes -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="serif text-3xl md:text-4xl text-center mb-16 gold-text">Wishes & Prayers</h2>
+            
+            <div class="max-w-2xl mx-auto">
+                <div class="mb-8">
+                    <h3 class="serif text-2xl gold-text mb-4">Leave Your Wishes</h3>
+                    <div class="flex space-x-2">
+                        <input type="text" id="wishInput" placeholder="Type your wish here..." class="flex-grow px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold">
+                        <button id="addWish" class="gold-bg text-white px-4 py-2 rounded hover:bg-opacity-90 transition duration-300">Send</button>
+                    </div>
+                </div>
+                
+                <div id="wishesContainer" class="space-y-4">
+                    <div class="p-4 border border-gray-200 rounded-lg">
+                        <p class="text-gray-700">"Wishing you both a lifetime of love and happiness together!"</p>
+                        <p class="text-sm text-gray-500 mt-2">- Sarah & John</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg">
+                        <p class="text-gray-700">"May your love continue to grow with each passing year. Congratulations!"</p>
+                        <p class="text-sm text-gray-500 mt-2">- Michael</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 cream-bg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="serif text-2xl gold-text mb-2">Aji & Dira</h3>
+                    <p class="text-gray-600">17 August 2025</p>
+                </div>
+                
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-lg gold-text mb-2">Contact</h4>
+                    <p class="text-gray-600">wedding@sayangku.com</p>
+                    <p class="text-gray-600">+62 812 3456 7890</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg gold-text mb-2">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-gold transition duration-300">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-gold transition duration-300">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-gold transition duration-300">
+                            <i class="fab fa-pinterest text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2025 Aji & Dira. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+        
+        document.getElementById('next').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        });
+        
+        document.getElementById('prev').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                updateCarousel();
+            });
+        });
+        
+        function updateCarousel() {
+            const carousel = document.getElementById('carousel');
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('bg-gold', index === currentSlide);
+                dot.classList.toggle('bg-gray-300', index !== currentSlide);
+            });
+        }
+        
+        // Initialize first dot as active
+        dots[0].classList.add('bg-gold');
+        dots[0].classList.remove('bg-gray-300');
+        
+        // Countdown timer
+        const weddingDate = new Date('August 17, 2025 16:00:00').getTime();
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.querySelector('.days').textContent = days.toString().padStart(2, '0');
+            document.querySelector('.hours').textContent = hours.toString().padStart(2, '0');
+            document.querySelector('.minutes').textContent = minutes.toString().padStart(2, '0');
+            document.querySelector('.seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // RSVP Form
+        document.getElementById('rsvpForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your RSVP! We look forward to celebrating with you.');
+            this.reset();
+        });
+        
+        // Wishes functionality
+        document.getElementById('addWish').addEventListener('click', function() {
+            const wishInput = document.getElementById('wishInput');
+            const wishText = wishInput.value.trim();
+            
+            if (wishText) {
+                const wishElement = document.createElement('div');
+                wishElement.className = 'p-4 border border-gray-200 rounded-lg';
+                wishElement.innerHTML = `
+                    <p class="text-gray-700">"${wishText}"</p>
+                    <p class="text-sm text-gray-500 mt-2">- Guest</p>
+                `;
+                
+                document.getElementById('wishesContainer').prepend(wishElement);
+                wishInput.value = '';
+            }
+        });
+        
+        // Allow pressing Enter to submit wish
+        document.getElementById('wishInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                document.getElementById('addWish').click();
+            }
+        });
+    </script>
+</body>
+</html>
